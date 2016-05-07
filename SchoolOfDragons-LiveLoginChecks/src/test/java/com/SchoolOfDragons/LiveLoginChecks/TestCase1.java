@@ -57,9 +57,9 @@ public class TestCase1
 		logger.log(LogStatus.INFO, loginPageScreenshot);		
 		Thread.sleep(5000);		
 		loginPage.userNameType("subbuPlayer");
-		logger.log(LogStatus.INFO, "Entered username");
+		logger.log(LogStatus.INFO, "Entered username : subbuPlayer");
 		loginPage.passwordType("123456");
-		logger.log(LogStatus.INFO, "Entered password");
+		logger.log(LogStatus.INFO, "Entered password : 123456");
 		String afterEnteringUsernameAndPassword=logger.addScreenCapture(CaptureScreenshot.takeScreenshot(driver, "Application"));
 		logger.log(LogStatus.INFO, afterEnteringUsernameAndPassword);
 		loginPage.playNowButtonClick();

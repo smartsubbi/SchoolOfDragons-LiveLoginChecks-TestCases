@@ -53,9 +53,9 @@ public class TestCase3
 		String loginPageScreenshot=logger.addScreenCapture(CaptureScreenshot.takeScreenshot(driver, "Application"));
 		logger.log(LogStatus.INFO, loginPageScreenshot);		
 		loginPage.userNameType("SubbuParentNA");
-		logger.log(LogStatus.INFO, "Entered username");
+		logger.log(LogStatus.INFO, "Entered username : SubbuParentNA");
 		loginPage.passwordType("123456");
-		logger.log(LogStatus.INFO, "Entered password");
+		logger.log(LogStatus.INFO, "Entered password : 123456");
 		String afterEnteringUsernameAndPassword=logger.addScreenCapture(CaptureScreenshot.takeScreenshot(driver, "Application"));
 		logger.log(LogStatus.INFO, afterEnteringUsernameAndPassword);
 		loginPage.playNowButtonClick();
