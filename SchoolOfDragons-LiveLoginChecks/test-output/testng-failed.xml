@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Live Test Cases Suite]">
+  <parameter name="Category" value="Live Test Cases"/>
+  <test name="Live Tests">
+    <classes>
+      <class name="com.SchoolOfDragons.LiveLoginChecks.TestCase1"/>
+      <class name="com.SchoolOfDragons.LiveLoginChecks.TestCase2"/>
+      <class name="com.SchoolOfDragons.LiveLoginChecks.TestCase3"/>
+      <class name="com.SchoolOfDragons.LiveLoginChecks.TestCase4"/>
+    </classes>
+  </test> <!-- Live Tests -->
+</suite> <!-- Failed suite [Live Test Cases Suite] -->
