@@ -69,7 +69,7 @@
 						<emailid>${emailid}</emailid>
 					</systemPropertyVariables>
 					<suiteXmlFiles>
-						<suiteXmlFile>LiveLoginTestCases.xml</suiteXmlFile>
+						<suiteXmlFile>SchoolOfDragons - Live - LiveLoginChecksTestCases - testNG.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>
