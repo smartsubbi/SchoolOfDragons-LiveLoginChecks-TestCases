@@ -4,15 +4,6 @@
 	<groupId>com.SchoolOfDragon</groupId>
 	<artifactId>com.SchoolOfDragon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
-	<repositories>
-		<repository>
-			<id>My-FrameWork</id>
-			<url>D:/MyFrameWork/MyFrameWork/libs</url>
-		</repository>
-	</repositories>
-
-
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -40,11 +31,11 @@
 			<version>2.40.2</version>
 		</dependency>
 		<dependency>
-			<groupId>MyFrameWork</groupId>
-			<artifactId>MyFrameWork-Jar</artifactId>
-			<version>0.0.1</version>
+			<groupId>SODFrameWork</groupId>
+			<artifactId>SODFrameWork</artifactId>
 			<scope>system</scope>
-			<systemPath>D:/MyFrameWork/MyFrameWork/libs/MyFrameWork/MyFrameWork-Jar/0.0.1/MyFrameWork.jar</systemPath>
+			<version>0.0.1</version>
+			<systemPath>D:/SODFrameWork/MyFrameWork.jar</systemPath>		
 		</dependency>
 	</dependencies>
 
