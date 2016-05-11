@@ -9,7 +9,7 @@
 		<repository>
 			<id>git-smartsubbi</id>
 			<name>smartsubbi's Git based repo</name>
-			<url>https://github.com/smartsubbi/mvn-repo/tree/master/</url>
+			<url>https://github.com/smartsubbi/mvn-repo/raw/master/</url>
 		</repository>
 		</repositories>
 
@@ -42,7 +42,7 @@
 			<dependency>
 			<groupId>SODFrameWork</groupId>
 			<artifactId>SODFrameWork</artifactId>			
-			<version>1.0.0</version>				
+			<version>1.0.10</version>				
 		</dependency>
 		</dependencies>
 

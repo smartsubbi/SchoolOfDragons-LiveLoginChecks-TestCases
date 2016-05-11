@@ -5,12 +5,12 @@
 	<artifactId>com.SchoolOfDragon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<repositories>
-	<repository>
-    <id>git-smartsubbi</id>
-    <name>smartsubbi's Git based repo</name>
-    <url>https://github.com/smartsubbi/mvn-repo/tree/master/</url>
-</repository>
-	</repositories>
+	 <repository>
+		<id>git-smartsubbi</id>
+		<name>smartsubbi's Git based repo</name>
+		<url>https://github.com/smartsubbi/mvn-repo/raw/master/</url>
+	  </repository>
+    </repositories>
 	
 	<dependencies>
 		<dependency>
@@ -41,7 +41,7 @@
 		<dependency>
 			<groupId>SODFrameWork</groupId>
 			<artifactId>SODFrameWork</artifactId>			
-			<version>1.0.0</version>				
+			<version>1.0.10</version>				
 		</dependency>
 	</dependencies>
 
