@@ -42,7 +42,7 @@
 			<dependency>
 			<groupId>SODFrameWork</groupId>
 			<artifactId>SODFrameWork</artifactId>			
-			<version>1.0.10</version>				
+			<version>1.0.15</version>				
 		</dependency>
 		</dependencies>
 

@@ -17,6 +17,7 @@ import Pages.AfterLoggedInPage;
 import Pages.CommonHeader;
 import Pages.LoginPage;
 import ReUse.SendMail;
+import ReUse.writeToTextFile;
 import Utility.CaptureScreenshot;
 
 
@@ -101,11 +102,14 @@ public class TestCase1
 	@AfterTest
 	public void printReportPath() throws Throwable
 	{
-		WebDriver driver = BrowserFactory.getBrowser("chrome");
+		//WebDriver driver = BrowserFactory.getBrowser("chrome");
 		String emailReportPathToSend = ExtentManager.finalPath;	
-		System.out.println(testCase1Result); 		
-		String mailContent = "You can refer to the below report for the run result\n"+emailReportPathToSend+"\n\nBelow are the test case results : \n\nTest Case 1 : Age 13 Player (Authorized User) Login - "+testCase1Result+"\nTest Case 2 : Age 12 Player (Authorized User) Login - "+TestCase2.testCase2Result+"\nTest Case 3 : Age 12 Player (Non Authorized User) Login - "+TestCase3.testCase3Result+"\nTest Case 4 : Age 13 Player (Non Authorized User) - Login "+TestCase4.testCase4Result;
-		SendMail.sendMailOnlyContent(driver, "School Of Dragons - Live - Login Checks",mailContent);
+		//System.out.println(testCase1Result);
+		String Line2 = "You can refer to the below report for the run result\n"+emailReportPathToSend+"\n\nBelow are the test case results : \n\nTest Case 1 : Age 13 Player (Authorized User) Login - "+testCase1Result+"\nTest Case 2 : Age 12 Player (Authorized User) Login - "+TestCase2.testCase2Result+"\nTest Case 3 : Age 12 Player (Non Authorized User) Login - "+TestCase3.testCase3Result+"\nTest Case 4 : Age 13 Player (Non Authorized User) - Login "+TestCase4.testCase4Result;
+		
+		writeToTextFile.writeToTempTextFile(Line2," "," " ," "," ");
+		//String mailContent = "You can refer to the below report for the run result\n"+emailReportPathToSend+"\n\nBelow are the test case results : \n\nTest Case 1 : Age 13 Player (Authorized User) Login - "+testCase1Result+"\nTest Case 2 : Age 12 Player (Authorized User) Login - "+TestCase2.testCase2Result+"\nTest Case 3 : Age 12 Player (Non Authorized User) Login - "+TestCase3.testCase3Result+"\nTest Case 4 : Age 13 Player (Non Authorized User) - Login "+TestCase4.testCase4Result;
+		//SendMail.sendMailOnlyContent(driver, "School Of Dragons - Live - Login Checks",mailContent);
 		BrowserFactory.closeBrowser();
 	}
 
