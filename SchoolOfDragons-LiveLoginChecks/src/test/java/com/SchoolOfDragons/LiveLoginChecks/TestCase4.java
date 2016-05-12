@@ -38,7 +38,7 @@ public class TestCase4
 	{
 		logger = report.startTest("Test Case 4: Live - Age 13 Player (Non Authorized User) Login to School of Dragons Live ","This will verify if a non Autorized user with age 13 can login with valid credentials");
 		
-		driver = BrowserFactory.getBrowser("chrome");
+		driver = BrowserFactory.getBrowser("firefox");
 		logger.log(LogStatus.INFO, "Browser is up and running");
 		String browserOpenedScreenshot=logger.addScreenCapture(CaptureScreenshot.takeScreenshot(driver, "Application"));
 		logger.log(LogStatus.INFO, browserOpenedScreenshot);		
